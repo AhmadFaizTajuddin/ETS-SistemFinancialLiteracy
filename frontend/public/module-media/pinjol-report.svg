@@ -1,0 +1,16 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#10202a"/>
+  <rect x="116" y="94" width="246" height="340" rx="26" fill="#eef6f8"/>
+  <rect x="154" y="145" width="170" height="18" rx="9" fill="#1f4e79"/>
+  <rect x="154" y="196" width="134" height="16" rx="8" fill="#8db5ce"/>
+  <rect x="154" y="236" width="170" height="16" rx="8" fill="#8db5ce"/>
+  <rect x="154" y="276" width="118" height="16" rx="8" fill="#8db5ce"/>
+  <circle cx="244" cy="365" r="38" fill="#2f8f5b"/>
+  <path d="M224 366l14 14 30-38" stroke="#eef6f8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M405 264h164" stroke="#ffb0a8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M532 222l48 42-48 42" stroke="#ffb0a8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="612" y="124" width="226" height="276" rx="30" fill="#1f4e79"/>
+  <path d="M724 184l62 32v72c0 54-31 89-62 108-31-19-62-54-62-108v-72l62-32z" fill="#eef6f8"/>
+  <path d="M698 286l19 19 39-50" stroke="#1f4e79" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#eef6f8">SIMPAN BUKTI, LAPORKAN</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#111827"/>
+  <rect x="116" y="98" width="728" height="344" rx="34" fill="#f8fafc"/>
+  <rect x="160" y="148" width="260" height="44" rx="22" fill="#dbeafe"/>
+  <rect x="160" y="226" width="260" height="44" rx="22" fill="#fee2e2"/>
+  <rect x="160" y="304" width="260" height="44" rx="22" fill="#dcfce7"/>
+  <circle cx="630" cy="248" r="98" fill="#1f4e79"/>
+  <path d="M584 256c24-54 68-54 92 0M586 296h88" stroke="#f8fafc" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="598" cy="224" r="12" fill="#f8fafc"/>
+  <circle cx="662" cy="224" r="12" fill="#f8fafc"/>
+  <path d="M712 164l42-42M724 206h60M712 336l42 42" stroke="#ffb0a8" stroke-width="14" stroke-linecap="round"/>
+  <text x="290" y="177" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1f4e79">PHISHING</text>
+  <text x="290" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#991b1b">VISHING</text>
+  <text x="290" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#166534">SMISHING</text>
+</svg>

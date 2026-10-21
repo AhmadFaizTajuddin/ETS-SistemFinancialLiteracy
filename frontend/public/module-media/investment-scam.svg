@@ -1,0 +1,11 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#171414"/>
+  <path d="M160 378c126-140 230-72 300-172 58-83 151-90 340-34" stroke="#2f8f5b" stroke-width="24" stroke-linecap="round"/>
+  <path d="M740 128l70 54-88 25" stroke="#2f8f5b" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="158" y="156" width="270" height="220" rx="28" fill="#f4eadf"/>
+  <text x="293" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="78" font-weight="800" fill="#1f4e79">2L</text>
+  <rect x="209" y="288" width="168" height="18" rx="9" fill="#1f4e79"/>
+  <circle cx="692" cy="312" r="88" fill="#431716"/>
+  <path d="M650 312h84M692 270v84" stroke="#ffb0a8" stroke-width="18" stroke-linecap="round"/>
+  <text x="480" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#f4eadf">LEGAL DAN LOGIS</text>
+</svg>

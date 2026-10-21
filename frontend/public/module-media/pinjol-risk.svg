@@ -1,0 +1,14 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#191513"/>
+  <path d="M130 410c96-158 204-234 324-228 150 7 202 137 376-48" stroke="#8b1111" stroke-width="34" stroke-linecap="round"/>
+  <path d="M130 410c96-158 204-234 324-228 150 7 202 137 376-48" stroke="#ffb0a8" stroke-width="8" stroke-dasharray="24 24" stroke-linecap="round"/>
+  <circle cx="212" cy="312" r="64" fill="#f2e8dd"/>
+  <text x="212" y="323" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#8b1111">Rp</text>
+  <rect x="407" y="118" width="146" height="250" rx="28" fill="#251f1d" stroke="#ffb0a8" stroke-width="6"/>
+  <rect x="438" y="158" width="84" height="14" rx="7" fill="#ffb0a8"/>
+  <rect x="437" y="210" width="86" height="86" rx="18" fill="#8b1111"/>
+  <path d="M468 241h24m-12-12v24" stroke="#fff3ef" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="704" cy="276" r="92" fill="#2b1b19" stroke="#d94b43" stroke-width="8"/>
+  <path d="M704 200v84l48 48" stroke="#d94b43" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f2e8dd">DEBT TRAP</text>
+</svg>

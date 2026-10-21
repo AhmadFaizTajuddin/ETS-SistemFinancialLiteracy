@@ -1,0 +1,11 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#13201f"/>
+  <path d="M480 82l236 92v124c0 118-84 190-236 234-152-44-236-116-236-234V174l236-92z" fill="#f4eadf"/>
+  <path d="M480 134l174 68v92c0 86-62 139-174 171-112-32-174-85-174-171v-92l174-68z" fill="#1f4e79"/>
+  <path d="M404 296l48 48 104-132" stroke="#f4eadf" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="126" y="164" width="174" height="44" rx="22" fill="#2f8f5b"/>
+  <rect x="660" y="164" width="174" height="44" rx="22" fill="#2f8f5b"/>
+  <rect x="108" y="244" width="150" height="36" rx="18" fill="#8fc5a8"/>
+  <rect x="702" y="244" width="150" height="36" rx="18" fill="#8fc5a8"/>
+  <text x="480" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#f4eadf">LINDUNGI AKUN DAN BUKTI</text>
+</svg>

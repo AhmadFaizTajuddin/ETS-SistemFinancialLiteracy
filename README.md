@@ -1,3 +1,110 @@
+# Evaluasi Tengah Semester Pemrograman Berbasis Kerangka Kerja
+
+## Anggota Kelompok 24
+| Nama | NRP |
+| --- | --- |
+| Ahmad Faiz Tajuddin | 5025231291 |
+| Kemal Tangguh Aji Rajasa | 5025231263 |
+| M Rizal Febrianto | 5025231258 |
+
+## 1. Deskripsi dan Ruang Lingkup Fitur Aplikasi Desktop Rich UI yang Dibuat
+A. Deskripsi Aplikasi
+FINLIT (Financial Literacy) atau Sanctuary of Financial Literacy merupakan aplikasi edukasi literasi keuangan digital yang dirancang untuk membantu pengguna memahami cara melindungi diri dari risiko keuangan, khususnya pinjaman online ilegal dan penipuan digital. Aplikasi ini menyediakan materi pembelajaran yang disusun secara terstruktur serta dilengkapi dengan kuis interaktif dan sistem penghargaan agar pengguna dapat belajar dengan lebih menarik. Sesuai dengan tujuan pada halaman utamanya, FINLIT mengajak pengguna mengenali risiko keuangan, mempelajari berbagai modus penipuan, dan meningkatkan kemampuan dalam mengambil keputusan finansial yang lebih aman. 【turn108222view0】
+
+Dari sisi antarmuka, aplikasi FINLIT menerapkan konsep Rich User Interface (Rich UI), yaitu antarmuka yang menyediakan elemen visual dan interaksi untuk memudahkan pengguna dalam mengakses fitur. Antarmukanya menggunakan tata letak yang terstruktur, navigasi yang jelas, kartu informasi, ikon, indikator progres, serta elemen interaktif untuk mendukung aktivitas pembelajaran.
+
+Catatan: Berdasarkan proyek ZIP yang diberikan dan website yang digunakan, FINLIT saat ini merupakan aplikasi berbasis web yang dikembangkan menggunakan Next.js dan React, dengan dukungan backend Node.js dan rancangan database PostgreSQL. Dengan demikian, konsep Rich UI diterapkan pada antarmuka webnya, bukan sebagai aplikasi desktop native.
+B. Ruang Lingkup Fitur Aplikasi
+Ruang lingkup fitur FINLIT meliputi beberapa bagian berikut.
+
+1. Halaman utama (Home)
+
+   Halaman utama menjadi tempat pengguna memperoleh gambaran mengenai tujuan aplikasi, topik pembelajaran, dan fitur yang tersedia. Halaman ini juga menyediakan ajakan untuk mulai belajar atau membuat akun.
+
+2. Registrasi dan login pengguna
+
+   Fitur ini memungkinkan pengguna membuat akun dan masuk ke dalam aplikasi. Dengan akun tersebut, pengguna dapat mengakses fitur pembelajaran serta menyimpan informasi terkait profil dan perkembangan belajarnya.
+
+3. Modul pembelajaran literasi keuangan
+
+   FINLIT menyediakan dua topik utama, yaitu:
+- Anti Pinjol Ilegal, yang membahas ciri-ciri pinjaman online ilegal, risiko pinjaman, dan cara melindungi diri dari praktik pinjaman yang merugikan.
+- Penipuan Digital, yang membahas modus phishing, social engineering, investasi bodong, dan berbagai risiko penipuan di dunia digital.
+   Kedua topik tersebut dibagi ke dalam modul pembelajaran yang membantu pengguna mempelajari materi secara bertahap. 【turn108222view0】
+
+4. Kuis interaktif dan evaluasi pembelajaran
+
+   Pengguna dapat mengerjakan kuis untuk menguji pemahaman terhadap materi yang telah dipelajari. Kuis mencakup evaluasi awal dan kuis akhir. Pada beberapa modul, tersedia pula mini kuis sebagai bagian dari proses pembelajaran.
+
+5. Sistem poin, badge, dan progres belajar
+
+   Aplikasi menerapkan konsep gamifikasi melalui pemberian poin, badge atau lencana pencapaian, serta pencatatan progres belajar. Sistem ini bertujuan untuk mendorong pengguna menyelesaikan materi dan meningkatkan motivasi belajar.
+
+6. Profil pengguna dan pengaturan privasi
+
+   Pengguna dapat melihat informasi profil, pencapaian, progres pembelajaran, dan lencana yang diperoleh. Terdapat pula pengaturan privasi untuk mengelola visibilitas profil serta keikutsertaan dalam papan peringkat.
+
+7. Leaderboard atau papan peringkat
+
+   Fitur leaderboard menampilkan peringkat pengguna berdasarkan poin yang diperoleh. Fitur ini memberikan unsur kompetisi yang dapat mendorong pengguna untuk lebih aktif menyelesaikan pembelajaran.
+
+8. Store dan inventory
+
+   Aplikasi menyediakan toko virtual untuk memperoleh item menggunakan poin yang tersedia. Item tersebut dapat disimpan dalam inventory dan digunakan sesuai dengan fungsi masing-masing di dalam sistem.
+
+9. Notifikasi dan navigasi aplikasi
+
+   Fitur notifikasi membantu menyediakan informasi kepada pengguna, sedangkan navigasi utama memudahkan perpindahan antara halaman pembelajaran, leaderboard, profil, dan toko virtual.
+
+Secara keseluruhan, ruang lingkup FINLIT berfokus pada penyediaan pengalaman belajar keuangan digital melalui materi, evaluasi, pengelolaan progres, dan gamifikasi. Aplikasi ini ditujukan sebagai sarana edukasi, bukan sebagai layanan pemberi pinjaman atau platform transaksi investasi.
+## 2. Latar Belakang dan Manfaat Aplikasi Dibuat
+A. Latar Belakang
+Perkembangan teknologi digital telah memudahkan masyarakat dalam mengakses berbagai layanan keuangan. Namun, kemudahan tersebut juga diikuti oleh risiko, seperti pinjaman online ilegal, penyalahgunaan data pribadi, phishing, penipuan melalui rekayasa sosial, dan penawaran investasi bodong. Pengguna yang belum memiliki pemahaman literasi keuangan dan keamanan digital yang memadai dapat mengalami kesulitan dalam membedakan layanan yang aman dari layanan yang berpotensi merugikan.
+
+Di sisi lain, pembelajaran mengenai risiko keuangan sering kali dianggap sulit dipahami apabila hanya disampaikan melalui penjelasan teoritis. Pengguna membutuhkan media pembelajaran yang informatif, mudah diakses, dan mampu memberikan gambaran mengenai permasalahan yang dapat dijumpai dalam kehidupan sehari-hari.
+
+Berdasarkan permasalahan tersebut, FINLIT dikembangkan sebagai media edukasi yang menggabungkan materi literasi keuangan dengan pembelajaran interaktif. Pengguna dapat mempelajari topik yang relevan, memahami studi kasus atau skenario risiko, mengerjakan kuis, serta memperoleh badge sebagai bentuk pencapaian belajar. Pendekatan ini selaras dengan konsep pembelajaran yang ditampilkan pada website FINLIT. 【turn108222view0】
+
+Selain materi edukasi, penggunaan Rich UI menjadi salah satu pendekatan untuk membuat aplikasi lebih mudah digunakan. Penyajian informasi melalui navigasi yang terstruktur, komponen visual, indikator progres, dan elemen interaktif diharapkan dapat membantu pengguna memahami informasi tanpa harus menghadapi tampilan yang membingungkan.
+B. Manfaat Aplikasi
+Pembuatan aplikasi FINLIT diharapkan memberikan manfaat sebagai berikut.
+
+1. Meningkatkan literasi keuangan digital
+
+Aplikasi membantu pengguna memahami karakteristik pinjaman online ilegal, mengenali berbagai modus penipuan digital, dan mengetahui langkah pencegahan yang dapat dilakukan.
+
+2. Meningkatkan kesadaran terhadap keamanan digital
+
+Melalui materi dan skenario pembelajaran, pengguna dapat lebih waspada terhadap tautan mencurigakan, permintaan data pribadi, penawaran investasi yang tidak wajar, dan teknik manipulasi yang digunakan oleh pelaku penipuan.
+
+3. Menyediakan media pembelajaran yang interaktif
+
+Kombinasi materi, mini kuis, kuis evaluasi, dan indikator progres membuat proses belajar tidak hanya berisi bacaan, tetapi juga melibatkan pengguna secara aktif.
+
+4. Meningkatkan motivasi belajar
+
+Sistem poin, badge, streak, dan leaderboard memberikan tujuan yang dapat dicapai selama proses pembelajaran. Mekanisme tersebut diharapkan mendorong pengguna agar lebih konsisten mempelajari materi.
+
+5. Memudahkan pemantauan perkembangan belajar
+
+Fitur profil dan progres memungkinkan pengguna melihat pencapaian yang telah diperoleh serta mengetahui perkembangan pembelajaran yang sudah diselesaikan.
+
+6. Menghadirkan antarmuka yang lebih mudah digunakan
+
+Penerapan Rich UI membantu menyusun informasi dan fitur secara terstruktur sehingga pengguna dapat menemukan materi, mengakses kuis, dan memahami status pencapaiannya dengan lebih mudah.
+
+7. Mendukung pembelajaran yang fleksibel
+
+Karena dikembangkan sebagai aplikasi web, FINLIT dapat diakses melalui browser pada perangkat yang kompatibel tanpa mengharuskan pengguna memasang aplikasi desktop native secara khusus.
+Kesimpulan
+FINLIT dikembangkan sebagai media pembelajaran literasi keuangan digital yang menggabungkan edukasi, interaksi, dan gamifikasi dalam satu aplikasi. Fokus utamanya adalah membantu pengguna mengenali bahaya pinjaman online ilegal dan penipuan digital sekaligus meningkatkan pemahaman mengenai cara melindungi diri ketika menggunakan layanan keuangan digital.
+
+Melalui penerapan Rich UI, aplikasi berupaya menghadirkan pengalaman belajar yang terstruktur, menarik, dan mudah diakses. Dengan demikian, FINLIT diharapkan dapat menjadi sarana edukasi yang mendukung peningkatan pengetahuan, kewaspadaan, dan kemampuan pengguna dalam mengambil keputusan finansial secara lebih bijak.
+
+## Poster Infografis Aplikasi
+
+<img width="1024" height="1536" alt="Infografis FINLIT_ Literasi Finansial Interaktif" src="https://github.com/user-attachments/assets/73f514fb-51bd-4b6e-801d-2da37de54e38" />
+
 ### 1.1 Tujuan Produk
 
 1. Mengubah konten edukasi OJK yang sudah ada (modul, majalah, artikel, video) menjadi pengalaman belajar interaktif.

@@ -1,0 +1,101 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Shield, Mail, Lock, ShieldCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { apiRequest, saveAuthSession, getEffectivePathProgress, syncUserToLocalStorage, type ApiUser } from "@/lib/api";
+
+export default function LoginPage() {
+  const router = useRouter();
+  const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-[#0f0f0f] px-6 py-12 text-[#f1eeee]">
+      <div className="w-full max-w-md rounded-2xl border border-[#242020] bg-[#161313] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
+        <div className="mb-8 text-center">
+          <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#201b1a]">
+            <Shield className="h-6 w-6 text-primary" fill="currentColor" fillOpacity={0.15} />
+          </div>
+          <h1 className="text-2xl font-bold">Masuk ke Finlit</h1>
+          <p className="mt-1 text-sm text-muted-foreground">Akses aman ke edukasi dan perlindungan finansial Anda.</p>
+        </div>
+
+        <form
+          className="space-y-5"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.currentTarget);
+            const email = String(formData.get("email") || "").trim();
+            const password = String(formData.get("password") || "");
+
+            setSubmitting(true);
+            try {
+              const localPoints = Number(localStorage.getItem("totalPoints") || 0);
+              const localProgress = {
+                pinjol: getEffectivePathProgress("pinjol"),
+                penipuan: getEffectivePathProgress("penipuan"),
+              };
+              const { token, user } = await apiRequest<{ token: string; user: ApiUser }>("/auth/login", {
+                method: "POST",
+                body: JSON.stringify({ email, password }),
+              });
+              saveAuthSession(token, user);
+              if (localPoints > 0 || localProgress.pinjol > 0 || localProgress.penipuan > 0) {
+                try {
+                  const synced = await apiRequest<{ user: ApiUser }>("/sync", {
+                    method: "POST",
+                    body: JSON.stringify({ points: localPoints, progress: localProgress }),
+                  });
+                  syncUserToLocalStorage(synced.user);
+                } catch {
+                  // sync gagal, data lokal tetap dipakai
+                }
+              }
+              router.push("/home");
+            } catch (err) {
+              setError(err instanceof Error ? err.message : "Gagal masuk.");
+            } finally {
+              setSubmitting(false);
+            }
+          }}
+        >
+          {error && <div className="rounded-md bg-red-500/10 p-2 text-center text-sm font-medium text-red-500">{error}</div>}
+          <div className="space-y-2">
+            <Label>Email</Label>
+            <div className="relative">
+              <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input type="email" name="email" placeholder="Alamat email Anda" className="bg-input pl-9" required />
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <Label>Kata Sandi</Label>
+              <a className="text-xs text-primary hover:underline" href="#">Lupa Kata Sandi?</a>
+            </div>
+            <div className="relative">
+              <Lock className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input type="password" name="password" placeholder="••••••••" className="bg-input pl-9" required />
+            </div>
+          </div>
+          <Button className="w-full shadow-glow" size="lg" disabled={submitting}>
+            {submitting ? "Memeriksa..." : "Masuk"}
+          </Button>
+        </form>
+
+        <p className="mt-6 text-center text-sm text-muted-foreground">
+          Belum punya akun?{" "}
+          <Link href="/signup" className="font-medium text-primary hover:underline">Daftar Sekarang</Link>
+        </p>
+        <div className="mt-6 flex items-center justify-center gap-2 text-[11px] text-muted-foreground">
+          <ShieldCheck className="h-3.5 w-3.5" />
+          Data Anda dilindungi oleh enkripsi standar industri.
+        </div>
+      </div>
+    </div>
+  );
+}
